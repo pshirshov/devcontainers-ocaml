@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dune build",
+            "type": "shell",
+            "command": "dune build",
+            "problemMatcher": [
+                "$ocamlc"
+            ],
+        },
+        {
+            "label": "ocamlbuild",
+            "type": "shell",
+            "command": "make clean build",
+            "problemMatcher": [
+                "$ocamlc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

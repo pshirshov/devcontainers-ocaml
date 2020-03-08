@@ -1,0 +1,16 @@
+{
+	"name": "OCaml",
+	"dockerFile": "Dockerfile",
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/zsh",
+	},
+	"remoteUser": "opam",
+	"files.associations": {
+		"dune": "dune",
+		"dune-project": "dune",
+	},
+	"extensions": [
+		"hackwaly.ocaml",
+		"maelvalais.dune",
+	]
+}
