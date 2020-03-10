@@ -2,12 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "dune build",
+            "label": "dune-build",
             "type": "shell",
             "command": "dune build",
             "problemMatcher": [
                 "$ocamlc"
             ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "ocamlbuild",
@@ -16,10 +20,6 @@
             "problemMatcher": [
                 "$ocamlc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
         }
     ]
 }

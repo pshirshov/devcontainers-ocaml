@@ -28,7 +28,6 @@ let deriv f dx = function x -> (f (x +. dx) -. f x) /. dx;;
 
 let sin'x x = deriv sin x;;
 
-
 print_string (String.concat " " (List.map (function x -> string_of_int(x + 1)) [1; 2]));;
 
 type first_record = { x: int; y: int; z: int}

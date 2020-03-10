@@ -5,12 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "OCaml",
+            "name": "ocamldebug",
             "type": "ocamldebug",
             "request": "launch",
-            "program": "${workspaceRoot}/_build/tut.d.byte",
+            "program": "${workspaceRoot}/_build/default/tut.d.byte",
             "console": "internalConsole",
-            "stopOnEntry": false
+            "stopOnEntry": false,
+            "preLaunchTask": "dune-build"
         },
     ]
 }

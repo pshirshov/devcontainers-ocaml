@@ -2,3 +2,13 @@
  (name tut)
  (modes byte)
 )
+
+(rule
+ (targets tut.d.cmo)
+ (deps    (:input tut.ml))
+ (action  (run ocamlfind ocamlc -c -g -o %{targets} %{input})))
+
+(rule
+ (targets tut.d.byte)
+ (deps    (:input tut.d.cmo))
+ (action  (run ocamlfind ocamlc -linkpkg -g -o %{targets} %{input})))
