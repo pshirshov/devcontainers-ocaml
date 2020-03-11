@@ -1,6 +1,6 @@
 (executable
  (name tut)
- (modes byte)
+ (modes byte exe)
 )
 
 (rule

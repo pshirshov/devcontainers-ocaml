@@ -12,5 +12,6 @@
 	"extensions": [
 		"hackwaly.ocaml",
 		"maelvalais.dune",
+		"maximedenes.vscoq",
 	]
 }

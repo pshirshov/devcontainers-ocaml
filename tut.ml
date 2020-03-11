@@ -34,3 +34,7 @@ type first_record = { x: int; y: int; z: int}
 type snd_record = { x: int; y: int; z: int}
 
 let project_and_rotate {x; y; _ } = { x= - y; y = x ; z = 0} ;;
+
+(*
+  print_int (2 / (1-1)) ;;
+*)

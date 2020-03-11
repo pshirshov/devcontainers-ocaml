@@ -52,6 +52,7 @@ RUN opam install core utop \
     dune merlin ocp-indent \
     async yojson core_extended core_bench cohttp async_graphics cryptokit menhir
 
+RUN opam repo add coq-released --all-switches https://coq.inria.fr/opam/released && MAKEFLAGS="-j 4" opam install -j 4 coq
 #earlybird
 
 RUN echo 'opam init -a' | zsh
